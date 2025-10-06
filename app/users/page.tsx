@@ -7,15 +7,15 @@ const UsersPage = () => {
         Rankings
       </h1>
       <p className="text-lg text-gray-100 italic mb-6">
-        Apologies for the not having the best design
+        Apologies for not having the best design
       </p>
 
       <div className="bg-chakraPurple p-6 rounded-xl shadow-lg border-4 border-sharinganRed w-full max-w-2xl">
         <h2 className="text-2xl font-bold text-white mb-4">Favorites</h2>
         <ul className="list-decimal list-inside space-y-2 text-gray-100">
-          <li>Dig through server logs to troubleshoot a customer's website behavior</li>
+          <li>Dig through server logs to troubleshoot a customer&apos;s website behavior</li>
           <li>Write and maintain Support Guides for our product</li>
-          <li>Debug a customer's build using a programming language and framework that you've never seen before</li>
+          <li>Debug a customer&apos;s build using a programming language and framework that you&apos;ve never seen before</li>
           <li>Submit bug reports and potentially bug fixes</li>
           <li>Set up your own copy of several site frameworks for debugging</li>
         </ul>
