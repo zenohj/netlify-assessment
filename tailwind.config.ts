@@ -1,23 +1,18 @@
 import type { Config } from 'tailwindcss'
 
 const config: Config = {
-  content: [
-    './pages/**/*.{js,ts,jsx,tsx,mdx}',
-    './components/**/*.{js,ts,jsx,tsx,mdx}',
-    './app/**/*.{js,ts,jsx,tsx,mdx}',
-  ],
+  content: ['./app/**/*.{ts,tsx}', './components/**/*.{ts,tsx}'],
   theme: {
-  extend: {
-    colors: {
-      konohaGreen: '#3B7A57',
-      hokageOrange: '#F57C00',
-      sharinganRed: '#B71C1C',
-      rasenganBlue: '#2196F3',
-      chakraPurple: '#6A1B9A',
+    extend: {
+      colors: {
+        konohaGreen: '#2d4f2f',
+        hokageOrange: '#f97316',
+        sharinganRed: '#dc2626',
+        chakraPurple: '#6b21a8',
+      },
     },
   },
-}
-
   plugins: [],
 }
+
 export default config
