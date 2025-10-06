@@ -1,0 +1,2 @@
+/netlify/:query  https://www.google.com/search?q=:query  301!
+/proxy-search/:query  https://www.google.com/search?q=:query  200

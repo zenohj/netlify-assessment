@@ -7,14 +7,17 @@ const config: Config = {
     './app/**/*.{js,ts,jsx,tsx,mdx}',
   ],
   theme: {
-    extend: {
-      backgroundImage: {
-        'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
-        'gradient-conic':
-          'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
-      },
+  extend: {
+    colors: {
+      konohaGreen: '#3B7A57',
+      hokageOrange: '#F57C00',
+      sharinganRed: '#B71C1C',
+      rasenganBlue: '#2196F3',
+      chakraPurple: '#6A1B9A',
     },
   },
+}
+
   plugins: [],
 }
 export default config
