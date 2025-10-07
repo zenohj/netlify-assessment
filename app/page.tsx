@@ -100,6 +100,27 @@ export default function Home() {
           The first rule performs a permanent redirect (301) from any <code>/netlify/anything</code> path to a Google search. The second rule sets up a proxy redirect that keeps the URL path but fetches content from Google.
         </p>
       </Section>
+
+      {/* ⚙️ Netlify Function Deployment Section */}
+<Section title="Netlify Function Deployment Experience" borderColor="border-sharinganRed">
+  <p className="text-lg text-gray-100 italic mb-2">
+    <strong>Question:</strong> Please attempt to deploy a function on our service. This need not be complicated. It could be "Hello World". Note that failure to deploy is not failing the exercise! Whether you have trouble or not, please describe what you experienced and how you attempted to troubleshoot any issues you encountered.
+  </p>
+  <p className="text-lg text-gray-100 italic mb-2">
+    <strong>Answer:</strong> I have visited the hyperlink for functions in Netlify to check how to successfully create it. My first attempt did not land any errors and the build was deployed smoothly.
+  </p>
+  <p className="text-lg text-gray-100 italic mb-2">Steps Proceeded:</p>
+  <ul className="list-disc list-inside text-gray-100 italic mb-4">
+    <li>Created a new folder in the project: <code>netlify/functions</code></li>
+    <li>Created a file inside <code>netlify/functions</code> named <code>hello.js</code></li>
+    <li>Commented the file path: <code>//netlify/functions/hello.js</code></li>
+    <li>Screenshot: <a href="https://imgur.com/a/u0rjmq5" target="_blank" rel="noopener noreferrer" className="text-hokageOrange underline hover:text-white">hello.js preview</a></li>
+    <li>Created another file named <code>netlify.toml</code></li>
+    <li>Screenshot: <a href="https://imgur.com/a/ZTyYAkz" target="_blank" rel="noopener noreferrer" className="text-hokageOrange underline hover:text-white">netlify.toml preview</a></li>
+    <li>Pushed the commit to Git and waited for Netlify to redeploy and build</li>
+  </ul>
+</Section>
+
       
 
       {/* 🛠️ Site Won’t Build Button */}
