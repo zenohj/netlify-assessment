@@ -26,10 +26,7 @@ export default function Home() {
       <AnswerCard />
 
       {/* 🧠 Feedback Section */}
-      <Section
-        title="What did you think of our service during the time you used it?"
-        borderColor="border-sharinganRed"
-      >
+      <Section title="What did you think of our service during the time you used it?" borderColor="border-sharinganRed">
         <p className="text-lg text-gray-100 italic">
           In general it is somehow similar to{' '}
           <a
@@ -64,10 +61,7 @@ export default function Home() {
       </Section>
 
       {/* 🌐 DNS Configuration Challenges Section */}
-      <Section
-        title="Hey? What do you think are two major challenges around DNS configuration for less-technical customers hosting websites?"
-        borderColor="border-sharinganRed"
-      >
+      <Section title="Hey? What do you think are two major challenges around DNS configuration for less-technical customers hosting websites?" borderColor="border-sharinganRed">
         <p className="text-lg text-gray-100 italic mb-2">
           A delay in troubleshooting will be inevitable when it comes to DNS configuration for less-technical customers. As you explain from basic terms to functionality, they might raise follow-up questions that extend the process.
         </p>
@@ -87,6 +81,23 @@ export default function Home() {
         </p>
         <p className="text-lg text-gray-100 italic">
           I would gather more information such as when the issue started, when it last occurred (or if it&apos;s still visible), and then notify our leads and cybersecurity team — if we have one or are allowed to communicate directly.
+        </p>
+      </Section>
+
+      {/* 🔁 Redirect and Proxy Setup Section */}
+      <Section title="Redirect and Proxy Setup Explanation" borderColor="border-sharinganRed">
+        <p className="text-lg text-gray-100 italic mb-2">
+          <strong>Question:</strong> How would you set up an HTTP 301 status redirect from <code>/netlify/anything</code> on your site to <code>https://www.google.com/search?q=anything</code>? Please provide the redirect formatting here. Now, how about a proxy redirect? Please add that proxy redirect rule directly to your site!
+        </p>
+        <p className="text-lg text-gray-100 italic mb-2">
+          <strong>Answer:</strong> I have created a folder under <code>/public</code> named <code>_redirects</code> and added these lines:
+        </p>
+        <pre className="bg-gray-800 text-white p-4 rounded-md text-sm overflow-x-auto mb-4">
+          /netlify/:query  https://www.google.com/search?q=:query  301!{'\n'}
+          /proxy-search/:query  https://www.google.com/search?q=:query  200
+        </pre>
+        <p className="text-lg text-gray-100 italic">
+          The first rule performs a permanent redirect (301) from any <code>/netlify/anything</code> path to a Google search. The second rule sets up a proxy redirect that keeps the URL path but fetches content from Google.
         </p>
       </Section>
 
