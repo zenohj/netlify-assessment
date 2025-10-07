@@ -100,44 +100,7 @@ export default function Home() {
           The first rule performs a permanent redirect (301) from any <code>/netlify/anything</code> path to a Google search. The second rule sets up a proxy redirect that keeps the URL path but fetches content from Google.
         </p>
       </Section>
-
-      {/* ⚙️ Netlify Function Deployment Section */}
-<Section title="Netlify Function Deployment Experience" borderColor="border-sharinganRed">
-  <p className="text-lg text-gray-100 italic mb-2">
-    <strong>Question:</strong> Please attempt to deploy a function on our service. This need not be complicated. It could be "Hello World". Note that failure to deploy is not failing the exercise! Whether you have trouble or not, please describe what you experienced and how you attempted to troubleshoot any issues you encountered.
-  </p>
-  <p className="text-lg text-gray-100 italic mb-2">
-    <strong>Answer:</strong> I have visited the hyperlink for functions in Netlify to check how to successfully create it. My first attempt did not land any errors and the build was deployed smoothly.
-  </p>
-  <p className="text-lg text-gray-100 italic mb-2">Steps Proceeded:</p>
-  <ul className="list-disc list-inside text-gray-100 italic mb-4">
-    <li>Created a new folder in the project: <code>netlify/functions</code></li>
-    <li>Created a file inside <code>netlify/functions</code> named <code>hello.js</code></li>
-    <li>Commented the file path: <code>//netlify/functions/hello.js</code></li>
-    <li>Added the following lines:</li>
-  </ul>
-  <pre className="bg-gray-800 text-white p-4 rounded-md text-sm overflow-x-auto mb-4">
-    // netlify/functions/hello.js{'\n'}
-    exports.handler = async function (event, context) {'{'}{'\n'}
-      return {'{'}{'\n'}
-        statusCode: 200,{'\n'}
-        body: JSON.stringify({ message: "Hello World from Netlify Function!" }),{'\n'}
-      {'}'};{'\n'}
-    {'}'};{'\n'}
-  </pre>
-  <ul className="list-disc list-inside text-gray-100 italic mb-4">
-    <li>Created another file named <code>netlify.toml</code></li>
-    <li>Added the following lines:</li>
-  </ul>
-  <pre className="bg-gray-800 text-white p-4 rounded-md text-sm overflow-x-auto mb-4">
-    [Functions]{'\n'}
-    directory = "netlify/functions"
-  </pre>
-  <p className="text-lg text-gray-100 italic">
-    Pushed the commit to Git and waited for Netlify to redeploy and build. Everything worked as expected.
-  </p>
-</Section>
-
+      
 
       {/* 🛠️ Site Won’t Build Button */}
       <Link
