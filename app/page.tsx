@@ -101,10 +101,10 @@ export default function Home() {
         </p>
       </Section>
 
-      {/* ⚙️ Netlify Function Deployment Section */}
+{/* ⚙️ Netlify Function Deployment Section */}
 <Section title="Netlify Function Deployment Experience" borderColor="border-sharinganRed">
   <p className="text-lg text-gray-100 italic mb-2">
-    <strong>Question:</strong> Please attempt to deploy a function on our service. This need not be complicated. It could be "Hello World". Note that failure to deploy is not failing the exercise! Whether you have trouble or not, please describe what you experienced and how you attempted to troubleshoot any issues you encountered.
+    <strong>Question:</strong> Please attempt to deploy a function on our service. This need not be complicated. It could be &quot;Hello World&quot;. Note that failure to deploy is not failing the exercise! Whether you have trouble or not, please describe what you experienced and how you attempted to troubleshoot any issues you encountered.
   </p>
   <p className="text-lg text-gray-100 italic mb-2">
     <strong>Answer:</strong> I have visited the hyperlink for functions in Netlify to check how to successfully create it. My first attempt did not land any errors and the build was deployed smoothly.
