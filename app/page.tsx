@@ -113,7 +113,7 @@ export default function Home() {
   <ul className="list-disc list-inside text-gray-100 italic mb-4">
     <li>Created a new folder in the project: <code>netlify/functions</code></li>
     <li>Created a file inside <code>netlify/functions</code> named <code>hello.js</code></li>
-    <li>Commented the file path: <code>//netlify/functions/hello.js</code></li>
+    <li>Commented the file path: <code>netlify/functions/hello.js</code></li>
     <li>Screenshot: <a href="https://imgur.com/a/u0rjmq5" target="_blank" rel="noopener noreferrer" className="text-hokageOrange underline hover:text-white">hello.js preview</a></li>
     <li>Created another file named <code>netlify.toml</code></li>
     <li>Screenshot: <a href="https://imgur.com/a/ZTyYAkz" target="_blank" rel="noopener noreferrer" className="text-hokageOrange underline hover:text-white">netlify.toml preview</a></li>
