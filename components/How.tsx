@@ -15,4 +15,4 @@ const HowiCreated = () => {
   )
 }
 
-export default HowiCreated
+export default HowiCreated  
